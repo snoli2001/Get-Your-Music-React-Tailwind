@@ -5,8 +5,8 @@ import { useMediaQuery } from 'react-responsive';
 
 const Tailwind = resolveConfig(theme);
 
-export default function useBreakPoint(breakpoint){
+export default function useBreakPoint(breakPoint){
   return useMediaQuery({
-    query: `(min-width:${Tailwind.theme.screens[breakpoint]})`,
+    query: `(min-width:${Tailwind.theme.screens[breakPoint]})`,
   });
 }
