@@ -1,8 +1,13 @@
 import * as React from 'react'
 import Transition from '../Transition'
-import {AiOutlineClose, AiOutlineHome} from 'react-icons/ai'
+import {AiOutlineClose, 
+        AiOutlineHome,
+        AiOutlineUser,
+        AiOutlineSearch,
+        AiOutlineDiff} from 'react-icons/ai'
 
-
+import {BsChatDots} from 'react-icons/bs'
+import {FaFileContract} from 'react-icons/fa'
 const Sidenav = (props) =>{
     return(
         <>
@@ -13,7 +18,7 @@ const Sidenav = (props) =>{
                     leave="transition-all duration-500"
                     leaveTo="-ml-64"
                     >
-            <aside className={`justify-start z-10 rounded-r px-3 bg-blue-400 md:bg-white border-none bg-opacity-100 md:bg-opacity-30 w-40 min-h-screen flex flex-col ${props.isStatic ? '': 'fixed'}`}>
+            <aside className={`justify-start z-20 rounded-r px-3 bg-blue-400 md:bg-white border-none bg-opacity-100 md:bg-opacity-30 w-40 min-h-screen flex flex-col ${props.isStatic ? '': 'fixed'}`}>
                 <section className="mt-10 flex items-center py-3 h-2/6 border-b">
                     <span className="inline-block w-12 h-12 rounded-full overflow-hidden">
                         <img
@@ -50,25 +55,25 @@ const Sidenav = (props) =>{
                         </li>
                         <li class="flex items-center">
                                 <a className="h-8 w-full p-3  cursor-pointer hover:bg-blue-500 md:hover:bg-blue-400 rounded flex items-center">
-                                    <AiOutlineHome/>
+                                    <AiOutlineUser/>
                                     <span className="ml-3" href="">Profile</span>
                                 </a>          
                         </li>
                         <li class="flex items-center">
                                 <a className="h-8 w-full p-3 cursor-pointer hover:bg-blue-500 md:hover:bg-blue-400 rounded flex items-center">
-                                    <AiOutlineHome/>
+                                    <AiOutlineSearch/>
                                     <span className="ml-3" href="">Search</span>
                                 </a>          
                         </li>
                         <li class="flex items-center">
                                 <a className="h-8 w-full p-3  cursor-pointer hover:bg-blue-500 md:hover:bg-blue-400 rounded flex items-center">
-                                    <AiOutlineHome/>
+                                    <BsChatDots/>
                                     <span className="ml-3" href="">Chats</span>
                                 </a>          
                         </li>
                         <li class="flex items-center">
                                 <a className="h-8 w-full p-3  cursor-pointer hover:bg-blue-500 md:hover:bg-blue-400 rounded flex items-center">
-                                    <AiOutlineHome/>
+                                    <AiOutlineDiff/>
                                     <span className="ml-3" href="">Contracts</span>
                                 </a>          
                         </li>
