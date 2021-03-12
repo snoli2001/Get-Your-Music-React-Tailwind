@@ -1,0 +1,34 @@
+.img-main{
+    height: 95%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    z-index: -1;
+    box-shadow: 0 0 8px 8px transparent inset;
+  
+}
+
+.card {
+    position: relative;
+  }
+  .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .card button {
+    position: absolute;
+    bottom: -10px;
+    right: 40%;
+  }
+
+  .btn-play{
+    background-color: #6617cb;
+    background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+    box-shadow: 0 0 0 0 #ec008c, 0.2rem 0.2rem 30px #6617cb;
+  }
+  btn-play:hover {
+  box-shadow: 0 0 0 0 #ec008c, 0.2rem 0.2rem 60px #6617cb;
+  }
